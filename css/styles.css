@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+    background-color: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+}
+
+.lamp-container {
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+}
+
+.lamp {
+    width: 100%;
+}
+
+.light {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+}
+
+.input-container {
+    max-width: 600px;
+    margin-top: 10%;
+    margin-left: 50%;
+    text-align: center;
+}
+
+.input-container h1 {
+    color: #fff;
+    margin-right: 45px;
+}
+
+.input-container .input-div input {
+    width: 450px;
+    height: 46.5px;
+    margin: 5px;
+    padding: 0px 20px;
+    border: 1px solid #fff;
+    /* outline: none; */
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 18px;
+    color: #fff;
+}
+
+.input-container .addBtn {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(128, 128, 128);
+    color: #fff;
+}
+
+.input-container .addBtn:hover {
+    background: rgb(170, 170, 170);
+    color: #0e0f13;
+    cursor: pointer;
+}
+
+
+
+/* script buttons */
+
+.container {
+    margin-left: 51%;
+}
+
+.item {
+    margin: 15px 0px;
+}
+
+.editBtn {
+    margin-left: 15px;
+    border: none;
+    background: none;
+    color: #ff0000;
+    font-size: 1.4rem;
+}
+
+.editBtn:hover {
+    color: #ab0000;
+    cursor: pointer;
+}
+
+
+.removeBtn {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(128, 128, 128);
+    font-size: 20px;
+    background: none;
+}
+
+.removeBtn:hover {
+    color: rgb(210, 210, 210);
+    cursor: pointer;
+}
+
+.inputItem {
+    text-align: center;
+    height: 35px;
+    width: 450px;
+    padding: 0px 20px;
+    border: 1.3px solid rgb(20, 171, 0);
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    background: #0e0f13;
+
+}
+
+.inputItem:disabled {
+    text-align: center;
+    height: 35px;
+    width: 450px;
+    padding: 0px 20px;
+    border: 1.3px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    background: none;
+}
+
+.active {
+    color: rgb(62, 184, 62);
+}
+
+.active:hover {
+    color: rgb(21, 135, 21);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .input-container {
+        margin-top: 20%;
+        margin-left: 45%;
+    }
+    
+    .input-container h1 {
+        color: #fff;
+        margin-right: 25px;
+    }
+    
+    .input-container .input-div input {
+        width: 400px;
+        height: 46.5px;
+        margin: 5px;
+        font-size: 14px;
+    }
+    
+    .input-container .addBtn {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+    
+
+    .container {
+        margin-left: 54%;
+    }
+
+    .inputItem {
+        width: 300px;
+    }
+
+    .inputItem:disabled {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .lamp-container {
+        display: none;
+    }
+
+    .input-container {
+        margin: auto;
+    }  
+    
+    .input-container .input-div input {
+        width: 500px;
+        height: 46.5px;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .container {
+        margin: auto;
+        text-align: center;
+    }
+
+    .container .inputItem {
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    
+    .input-container .input-div input {
+        width: 300px;
+        height: 46.5px;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .container {
+        margin: auto;
+        text-align: center;
+    }
+
+    .container .inputItem {
+        width: 250px;
+    }
+
+}
